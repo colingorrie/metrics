@@ -1,0 +1,210 @@
+\chapter{What is metre?}
+
+This material is drawn largely from \textcite{fabb2008meter}.
+
+\ex Poetry seems to be a human universal. Its appearance in writing predates prose in most societies.
+\xe
+
+\ex What is poetry? The organization of text into lines. This distinguishes poetry from prose.
+\xe
+
+\ex Not any arbitrary division of language into lines counts as poetry though. One common type of poetry, \textbf{metrical poetry}, places conditions on the lines: they must be of a certain length, they must have certain kinds of syllables in certain places, etc.
+\xe
+
+\ex Let's call these conditions \textbf{well-formedness requirements}, because, without then, a line of poetry cannot be considered well-formed. (This is a general term from linguistics, btw)
+\xe
+
+\ex There is \textbf{non-metrical poetry} as well, where well-formedness is not based on line length, but on things like syntactic parallelism (much of Classical Chinese and Biblical Hebrew poetry is like this):
+\xe
+
+\ex \begin{verse}
+  \lb{A}A voice] \lb{B}calls:]\\!
+
+  \lb{C}In the wilderness] \lb{D}open] \lb{E}a road for Yahweh;]\\
+  \lb{D}Make straight] \lb{C}in the desert] \lb{E}a highway for our God!]\\!
+
+  \lb{A}Every valley] \lb{B}shall be exalted,]\\
+  \lb{A}And every mountain and hill] \lb{B}(shall be) made low,]\\!
+
+  \lb{A}And the crooked] \lb{B}shall become straight,]\\
+  \lb{A}And the mountain crags] \lb{B}(shall become) a ravine.]\\!
+
+  \lb{A}And Yahweh's glory] \lb{B}shall be revealed]\\
+  \lb{A}And all flesh] \lb{B}shall see (it) together]\\!
+
+  \lb{A}For Yahweh's mouth] \lb{B}has spoken.]\\!
+\end{verse}
+\attrib{Isaiah 40:3--5, as cited in \textcite[2]{fabb2008meter}}
+\xe
+
+\ex In Isaiah 40:3--5, the line is set up around parallel syntactic categories such as subject (A), predicate (B), locative phrase (C), transitive verb (D), and direct object (E).
+\xe
+
+\ex Another form of non-metrical poetry is \textbf{free verse} à la Ezra Pound, which \textquote{does not rest on a generally agreed-upon set of principles} \autocite[3]{fabb2008meter} – each poem itself invites the reader to discover the principles that shape it. 
+\xe
+
+\ex Metrical poetry is the most common type of poetry, and forms the bulk of the English-language poetic tradition.
+\xe
+
+\ex Take a look at this excerpt from Keats' \enquote{Fancy}: the lines are of approximately the same length, either seven or eight syllables long.
+\xe
+
+\ex \begin{verse}
+  Ever let the fancy roam,\\
+  Pleasure never is at home,\\
+  At a touch sweet pleasure melteth,\\
+  Like to bubbles when rain pelteth.\\!
+\end{verse}
+\attrib{Keats, \enquote{Fancy}}
+\xe
+
+\ex The lines also have a rhythm: \textit{Éver ĺet the fáncy róam, Pléasure néver ís at hóme,} etc.
+\xe
+
+\ex These two things are related: the rhythmic nature of metrical poetry is a byproduct of the division into lines of restricted length.
+\xe
+
+\ex How does rhythm arise from length restrictions on lines? Because what counts for line length restrictions is not syllables. What counts is groups of syllables called \textbf{feet}.
+\xe
+
+\ex The Keats divided into feet, boundaries marked with a single parenthesis:
+\begin{verse}
+  (Ever (let the (fancy (roam,\\
+  (Pleasure (never (is at (home,\\
+  (At a (touch sweet (pleasure (melteth,\\
+  (Like to (bubbles (when rain (pelteth.\\!
+\end{verse}
+\attrib{Keats, \enquote{Fancy}}
+\xe
+
+\ex Even though the first two lines have seven syllables, and the second two have eight, the lines all count as the same length because length is measured in feet.
+\xe
+
+\ex Another example:
+\begin{verse}
+  For the An)gel of Death) spread his wings) on the blast,)\\
+  And breathed) in the face) of the foe) as he passed:)\\
+  And the eyes) of the sleep)ers waxed dead)ly and chill,)\\
+  And their hearts) but once heaved,) and fore)ver grew still.)\\!
+\attrib{Byron, \enquote{The Destruction of Sennerachib}}
+\end{verse}
+\xe
+
+\ex Note here that foot boundaries seem to be able to slice words in half, e.g. \textit{An-gel}, \textit{sleep-ers}, and \textit{fore-ver}.
+\xe
+
+\ex A foot is a grouping of syllables with a special property. They have a \textbf{head}: one special syllable which is at either the right or left edge of the foot.
+\xe
+
+\ex The careful observer will notice the difference in the direction of the parentheses between the Keats and the Byron, a notational device which \textcite{fabb2008meter} use to distinguish between \textbf{left-headed} and \textbf{right-headed} feet.
+\xe
+
+\ex The Keats is left-headed: [\textit{(Éver (lét the (fáncy (róam}], while the Byron is right-headed: [\textit{For the Án)gel of Déath) spread his wíngs) on the blást)}].
+\xe
+
+\ex In the Keats, which is left-headed, the only feet with one syllable are on the right edge of the line.
+\xe
+
+\ex In the Byron, which is right-headed, the only foot with two syllables is on the left side of the line. These two facts are connected, as we shall see.
+\xe
+
+\ex To get more abstract: feet are asymmetrical, hierarchical units. They contain multiple syllables, and privilege one of these over the others.
+\xe
+
+\ex Asymmetrical hierarchical units such as these are common in many aspects of linguistic structure.
+\xe
+
+\ex
+  We can describe these units using tree notation (S = strong, W = weak):
+
+  \begin{tikzpicture}[sibling
+    distance=10pt, level distance=20pt]
+    \Tree[ [.S \textit{E-} ] [.W \textit{-ver} ] ]
+  \end{tikzpicture}
+  \begin{tikzpicture}[sibling
+    distance=10pt, level distance=20pt]
+    \Tree[ [.S \textit{let} ] [.W \textit{the} ] ]
+  \end{tikzpicture}
+  \begin{tikzpicture}[sibling
+    distance=10pt, level distance=20pt]
+    \Tree[ [.S \textit{fan-} ] [.W \textit{-cy} ] ]
+  \end{tikzpicture}
+  \begin{tikzpicture}[sibling
+    distance=10pt, level distance=20pt]
+    \Tree[ [.S \textit{roam} ] ]
+  \end{tikzpicture}
+\xe
+
+\ex
+Tree notation is not the only possible representation of foot structure. \Textcite{fabb2008meter} use a grid notation:
+
+\begingl
+\gla E ver  let the  fan cy  roam//
+\glb (∗ ∗   (∗   ∗   (∗   ∗  (∗//
+\glb (∗ {}  (∗   {}  (∗   {} (∗//
+\endgl
+\xe
+
+
+We can see that poetic metre is turning out to be a hierarchical structure. There are syllables, and syllables are contained in feet. But syllables within a foot are not equal, and so they need to be represented specially.
+
+The way F\&H notate this is by marking each syllable with an asterisk, and foot boundaries with parentheses (gridline 0). To mark the heads of feet (haha) they add another line of asterisks (gridline 1). Here’s an example:
+
+(img)
+
+This is called \textbf{projection}, where an entity `projects' a representation of itself to a further hierarchical level. So the syllable \textit{Plea-} in \textit{pleasure} projects an asterisk onto gridlines 0 and 1.
+
+NB: asterisks and gridlines are the notation that F\&H use. Others use tree structures or other devices, but they are all more or less interchangeable.
+
+But feet are not the end of the story: there is a higher level of hierarchical grouping above feet: this is not a part of traditional metrical theory so it doesn’t have a traditional name like `foot'.
+
+NB: I say higher-level because this is the normal term, but in fact, F\&H draw higher levels lower on the page, which is a quirk of their notation.
+
+This next level (gridline 2) is formed by grouping feet together into groups of two. This \textbf{binary branching} is a basic element of the theory (and is common throughout generative linguistics).
+
+In fact, in F\&H’s system, you keep going, grouping these higher-level representations into groups of two (at gridline 3, 4...) until you reach only a single constituent (notated by an a asterisk).
+
+The length of a line is therefore determined by how many gridlines are allowed. In practice, poems which require 4+ gridlines are rare. Most poetry can be analysed using 3 gridlines only.
+
+Every syllable, then, is assigned at least one asterisk in F\&H’s notation. Syllables which are the heads of feet are assigned one more, the heads of feet that are themselves the heads of two-foot units are assigned one more…
+
+…and the syllable that is the head of the line as a whole (assuming a 3-level meter) gets an additional asterisk.
+
+Look at these asterisks as representing relative prominence. Positions with more asterisks are positions of greater prominence.
+
+Now, independently of poetry, certain syllables within a word have more prominence than others. In English we speak of this as *stress*.
+
+So in the word \textit{próminent}, native speakers intuitively recognise that the first syllable is prominent i.e. stressed, relative to the others, which we call unstressed.
+
+The prominence of stress and the prominence of metrical position interact in interesting ways. In general, the two want to coincide.
+
+We could formulate a general rule for English verse: place stressed syllables in positions with at least one asterisk (i.e. as the head of a foot).
+
+Note that this rule is more of a tendency than an ironclad law: some stressed syllables don’t get put in prominent positions, and some prominent positions don’t get filled with stressed syllables.
+
+Metrical traditions can place restrictions on the composition of lines other than stress: syllable quantity (more later), placement of word boundaries, tone, alliteration. But these restrictions are all relative to the metrical grid.
+
+So what does a poet do in composing metrical verse?
+
+
+% \begin{verse}
+%   April is the cruelest month, breeding\\
+%   Lilacs out of the dead land, mixing\\
+%   Memory and desire, stirring\\
+%   Dull roots with spring rain.\\!
+% \end{verse}
+% \attrib{Eliot, \textit{The Waste Land}}
+
+% \begin{exe}
+%   \ex
+%   \begin{tikzpicture}[sibling
+%     distance=10pt, level distance=20pt]
+    
+%     \Tree[.Line [.Ft [.σ Shall ] [.σ I ] ]
+%                 [.Ft [.σ com- ] [.σ -pare ] ]
+%                 [.Ft [.σ thee ] [.σ to ] ]
+%                 [.Ft [.σ a ] [.σ sum- ] ]
+%                 [.Ft [.σ -mer's ] [.σ day? ] ]
+%     ]
+%   \end{tikzpicture}
+% \end{exe}
